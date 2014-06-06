@@ -1,0 +1,17 @@
+{% verbatim %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css" />
+    <script type="text/javascript" src="/static/js/angular.min.js"></script>
+  </head>
+
+  <body>
+    <div ng-app="">
+      <input type="text" ng-model="data.message">
+      <h1>{{data.message}}</h1>
+      <div class="{{data.message}}"></div>
+    </div>
+  </body>
+</html>
+{% endverbatim %}
