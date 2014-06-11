@@ -1,0 +1,22 @@
+{
+    "Street Fighter":{
+        "title": "Street Fighter",
+        "abbr": "sf"
+    },
+    "Street Fighter X Tekken":{
+        "title": "Street Fighter X Tekken",
+        "abbr": "sfxt"
+    },
+    "Mortal Kombat":{
+        "title": "Mortal Kombat",
+        "abbr": "mk"
+    },
+    "Marvel vs Capcom 3":{
+        "title": "Marvel vs Capcom 3",
+        "abbr": "mvc3"
+    },
+    "Killer Istinct":{
+        "title": "Killer Istinct",
+        "abbr": "ki"
+    }
+}

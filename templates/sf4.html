@@ -42,22 +42,27 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container" ng-app="app">
 
-      <div class="starter-template">
+      <div class="starter-template" ng-controller="GameCtrl as app">
         <h1>Bootstrap starter template</h1>
+        <h2>{{app.fuckyou}}<h2>
         <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        <p ng-repeat="game in app.games" ng-click="app.selectGame(game.title)">
+          {{game.title}}
+        </p>
       </div>
 
     </div><!-- /.container -->
-    <div class="btn btn-success">heyyyy</div>
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/static/js/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/static/js/jquery-1.11.1.min.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/static/js/angular.min.js"></script>
+    <script type="text/javascript" src="/static/js/sf4.js"></script>
   </body>
 </html>
 {% endverbatim %}
