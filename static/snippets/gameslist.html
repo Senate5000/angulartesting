@@ -1,0 +1,10 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3 col-md-2 sidebar">
+      <ul class="nav nav-sidebar">
+       <!--  <li class="active"><a href="#">Overview</a></li> -->
+        <li ng-repeat="game in games" ng-click="selectGame(game.title)"><a href="#/{{game.abbr}}"> {{game.title}}</a></li>
+      </ul>
+    </div>            
+  </div>
+</div>

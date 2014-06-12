@@ -1,0 +1,56 @@
+<!-- <div class="btn-group-vertical">
+<button ng-repeat="character in characters" ng-click="selectCharacter(character.name)" class="btn btn-default">
+          {{character.name}}
+</button>
+</div> -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3 col-md-2 sidebar">
+      <ul class="nav nav-sidebar">
+       <!--  <li class="active"><a href="#">Overview</a></li> -->
+        <li ng-repeat="character in characters"><a href="#/{{gameTitle}}/{{character.url}}"> {{character.name}}</a></li>
+      </ul>
+    </div>            
+  </div>
+</div>
+
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" ng-show="isCharacterSelected">
+  <h1 class="page-header">{{selectedCharacter}}</h1>
+
+  <div class="row placeholders">
+    <ul class="nav nav-pills">
+        <li ng-class="{ active: isTabSet(1) }">
+            <a href ng-click="setTab(1)">Info</a>
+        </li>
+        <li ng-class="{ active: isTabSet(2) }">
+            <a href ng-click="setTab(2)">Moves</a>
+        </li>
+        <li ng-class="{ active: isTabSet(3) }">
+            <a href ng-click="setTab(3)">Matchups</a>
+        </li>
+    </ul>
+    <div ng-show="isTabSet(1)">
+        {{characterInfo.info.info}}
+    </div>
+    <div ng-show="isTabSet(2)">
+        <ul>
+            <li ng-repeat="move in characterInfo.info.moves">
+                {{move.name}} -- {{move.description}}
+            </li>
+        </ul>
+    </div>
+    <div ng-show="isTabSet(3)">
+        <ul>
+            <li ng-repeat="matchup in characterInfo.info.matchups">
+                {{matchup.vs}} - {{matchup.description}}
+            </li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+
+<div >
+    
+</div>
+

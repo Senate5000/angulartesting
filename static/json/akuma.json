@@ -1,0 +1,23 @@
+{
+    "info": {
+        "moves":{
+            "hadouken":{
+                "name": "Hadouken",
+                "description": "A fireball",
+                "inputs": "236 + punch"
+            }
+        },
+        "info": "Something something info",
+        "matchups": {
+            "Ryu":{
+                "vs": "Ryu",
+                "description": "Lots of fireballs"
+            },
+            "Ken":{
+                "vs": "Ken",
+                "description": "Lots of kicks"
+            }
+        }
+
+    }
+}

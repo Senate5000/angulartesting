@@ -7,22 +7,10 @@
 
     <!-- Bootstrap core CSS -->
     <link href="/static/css/bootstrap.css" rel="stylesheet">
-
-  <style>
-  body {
-          padding-top: 50px;
-        }
-        .starter-template {
-          padding: 40px 15px;
-          text-align: center;
-        }
-  </style>
-  </head>
-
-  <body>
-
+    <link href="/static/css/dashboard.css" rel="stylesheet">
+  <body ng-app="app">
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
+      <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -30,38 +18,36 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">Home</a>
         </div>
-        <div class="collapse navbar-collapse">
+        <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li ng-show="isGameSelected"><a href="#">{{selectedGame}}</a></li>
+            <li ng-show="isCharacterSelected"><a href="#">{{selectedCharacter}}</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </div>
       </div>
     </div>
-
-    <div class="container" ng-app="app">
-
-      <div class="starter-template" ng-controller="GameCtrl as app">
-        <h1>Bootstrap starter template</h1>
-        <h2>{{app.fuckyou}}<h2>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        <p ng-repeat="game in app.games" ng-click="app.selectGame(game.title)">
-          {{game.title}}
-        </p>
-      </div>
-
-    </div><!-- /.container -->
-
+    <ng-view></ng-view>
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/static/js/jquery-1.11.1.min.js"></script>
-    <script src="/static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/static/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/static/js/angular.min.js"></script>
+    <script type="text/javascript" src="/static/js/angular-route.min.js"></script>
     <script type="text/javascript" src="/static/js/sf4.js"></script>
   </body>
 </html>

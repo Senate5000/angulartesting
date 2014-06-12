@@ -1,0 +1,178 @@
+{
+   "abel": {
+        "name": "Abel",
+        "url": "abel"
+    },
+    "adon": {
+        "name": "Adon",
+        "url": "adon"
+    },
+    "akuma": {
+        "name": "Akuma",
+        "url": "akuma"
+    },
+    "balrog": {
+        "name": "Balrog",
+        "url": "balrog"
+    },
+    "blanka": {
+        "name": "Blanka",
+        "url": "blanka"
+    },
+    "cviper": {
+        "name": "C. Viper",
+        "url": "cviper"
+    },
+    "cammy": {
+        "name": "Cammy",
+        "url": "cammy"
+    },
+    "chunli": {
+        "name": "Chun Li",
+        "url": "chunli"
+    },
+    "cody": {
+        "name": "Cody",
+        "url": "cody"
+    },
+    "dan": {
+        "name": "Dan",
+        "url": "dan"
+    },
+    "decapre": {
+        "name": "Decapre",
+        "url": "decapre"
+    },
+    "deejay": {
+        "name": "Dee Jay",
+        "url": "deejay"
+    },
+    "dhalsim": {
+        "name": "Dhalsim",
+        "url": "dhalsim"
+    },
+    "dudley": {
+        "name": "Dudley",
+        "url": "dudley"
+    },
+    "ehonda": {
+        "name": "E. Honda",
+        "url": "ehonda"
+    },
+    "elfuerte": {
+        "name": "El Fuerte",
+        "url": "elfuerte"
+    },
+    "elena": {
+        "name": "Elena",
+        "url": "elena"
+    },
+    "evilryu": {
+        "name": "Evil Ryu",
+        "url": "evilryu"
+    },
+    "feilong": {
+        "name": "Fei Long",
+        "url": "feilong"
+    },
+    "gen": {
+        "name": "Gen",
+        "url": "gen"
+    },
+    "gouken": {
+        "name": "Gouken",
+        "url": "gouken"
+    },
+    "guile": {
+        "name": "Guile",
+        "url": "guile"
+    },
+    "guy": {
+        "name": "Guy",
+        "url": "guy"
+    },
+    "hakan": {
+        "name": "Hakan",
+        "url": "hakan"
+    },
+    "hugo": {
+        "name": "Hugo",
+        "url": "hugo"
+    },
+    "ibuki": {
+        "name": "Ibuki",
+        "url": "ibuki"
+    },
+    "juri": {
+        "name": "Juri",
+        "url": "juri"
+    },
+    "ken": {
+        "name": "Ken",
+        "url": "ken"
+    },
+    "mbison": {
+        "name": "M. Bison",
+        "url": "mbison"
+    },
+    "makoto": {
+        "name": "Makoto",
+        "url": "makoto"
+    },
+    "oni": {
+        "name": "Oni",
+        "url": "oni"
+    },
+    "poison": {
+        "name": "Poison",
+        "url": "poison"
+    },
+    "rolento": {
+        "name": "Rolento",
+        "url": "rolento"
+    },
+    "rose": {
+        "name": "Rose",
+        "url": "rose"
+    },
+    "rufus": {
+        "name": "Rufus",
+        "url": "rufus"
+    },
+    "ryu": {
+        "name": "Ryu",
+        "url": "ryu"
+    },
+    "sagat": {
+        "name": "Sagat",
+        "url": "sagat"
+    },
+    "sakura": {
+        "name": "Sakura",
+        "url": "sakura"
+    },
+    "seth": {
+        "name": "Seth",
+        "url": "seth"
+    },
+    "thawk": {
+        "name": "T. Hawk",
+        "url": "thawk"
+    },
+    "vega": {
+        "name": "Vega",
+        "url": "vega"
+    },
+    "yang": {
+        "name": "Yang",
+        "url": "yang"
+    },
+    "yun": {
+        "name": "Yun",
+        "url": "yun"
+    },
+    "zangief": {
+        "name": "Zangief",
+        "url": "zangief"
+    }
+}
