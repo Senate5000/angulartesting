@@ -1,4 +1,6 @@
 {
+    "name": "Akuma",
+    "game": "Street Fighter",
     "info": {
         "moves":{
             "hadouken":{
@@ -18,6 +20,5 @@
                 "description": "Lots of kicks"
             }
         }
-
     }
 }

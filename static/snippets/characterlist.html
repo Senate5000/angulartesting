@@ -28,6 +28,9 @@
         <li ng-class="{ active: isTabSet(3) }">
             <a href ng-click="setTab(3)">Matchups</a>
         </li>
+        <li ng-class="{ active: isTabSet(4) }">
+            <a href ng-click="setTab(4)">Combos</a>
+        </li>
     </ul>
     <div ng-show="isTabSet(1)">
         {{characterInfo.info.info}}
@@ -43,6 +46,13 @@
         <ul>
             <li ng-repeat="matchup in characterInfo.info.matchups">
                 {{matchup.vs}} - {{matchup.description}}
+            </li>
+        </ul>
+    </div>
+    <div ng-show="isTabSet(4)">
+        <ul>
+            <li ng-repeat="combo in comboList.combos">
+                {{combo}}
             </li>
         </ul>
     </div>

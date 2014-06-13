@@ -70,9 +70,20 @@ app.controller("GameCtrl", function($scope, $routeParams, $http, $location, $roo
             .then(function(cdata){
                 $scope.characterInfo = cdata.data;
                 console.log($scope.characterInfo)
-                $rootScope.isCharacterSelected = true;
                 $scope.tab = 1;
-                $rootScope.selectedCharacter = $scope.characters[$scope.selectedChar]["name"];
+                console.log($scope.characterInfo["game"]);
+                $rootScope.isGameSelected = true;
+                $rootScope.selectedGame = $scope.characterInfo.game;
+                $rootScope.isCharacterSelected = true;
+                $rootScope.selectedCharacter = $scope.characterInfo["name"];
+
+            });
+        $http.get("/static/json/" + $scope.selectedChar + "-combo.json")
+            .then(function(combodata){
+                $scope.comboList = combodata.data;
+                console.log($scope.comboList);
+                var splitCombo = $scope.comboList.combos["combo1"].split(":");
+                console.log(splitCombo);
             })
     }
 
@@ -84,12 +95,6 @@ app.controller("GameCtrl", function($scope, $routeParams, $http, $location, $roo
         return checkTab === $scope.tab
     }
 
-    $scope.selectCharacter = function(character){
-        console.log(character);
-        $rootScope.isCharacterSelected = true;
-        $scope.tab = 1;
-        $rootScope.selectedCharacter = $scope.characters[character]["name"];
-    }
 })
 
 app.controller("DetailsCtrl", function($scope, $routeParams, jsonService){
