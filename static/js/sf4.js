@@ -83,7 +83,12 @@ app.controller("GameCtrl", function($scope, $routeParams, $http, $location, $roo
                 $scope.comboList = combodata.data;
                 console.log($scope.comboList);
                 var splitCombo = $scope.comboList.combos["combo1"].split(":");
-                console.log(splitCombo);
+                for(x in splitCombo){
+                    console.log(splitCombo[x]);
+                    if(splitCombo[x].search("236") != -1 && splitCombo[x].search("P") != -1){
+                        console.log("Fireball");
+                    }
+                }
             })
     }
 

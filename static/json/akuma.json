@@ -6,7 +6,17 @@
             "hadouken":{
                 "name": "Hadouken",
                 "description": "A fireball",
-                "inputs": "236 + punch"
+                "inputs": "236P"
+            },
+            "tatsu":{
+                "name": "Tatsu",
+                "description": "Spinning kick",
+                "inputs": "214K"
+            },
+            "Dragonpunch":{
+                "name": "Dragonpunch",
+                "description": "Spinning uppercut",
+                "inputs": "623P"
             }
         },
         "info": "Something something info",
