@@ -81,14 +81,25 @@ app.controller("GameCtrl", function($scope, $routeParams, $http, $location, $roo
         $http.get("/static/json/" + $scope.selectedChar + "-combo.json")
             .then(function(combodata){
                 $scope.comboList = combodata.data;
+                for(combo in $scope.comboList["combos"]){
+                    cmbo = $scope.comboList["combos"][combo];
+                    $scope.comboList["combos"][combo] = cmbo.replace(/:/g, "");
+                }
                 console.log($scope.comboList);
-                var splitCombo = $scope.comboList.combos["combo1"].split(":");
-                for(x in splitCombo){
-                    console.log(splitCombo[x]);
-                    if(splitCombo[x].search("236") != -1 && splitCombo[x].search("P") != -1){
+                $scope.splitCombo = $scope.comboList.combos["combo1"].split(":");
+                for(x in $scope.splitCombo){
+                    console.log($scope.splitCombo[x]);
+                    // check for fireball motion and if it is followed by a punch
+                    if($scope.splitCombo[x].search("236") != -1 && $scope.splitCombo[x].search("P") != -1){
                         console.log("Fireball");
                     }
                 }
+                $scope.formattedCombos = {};
+                for(combo in $scope.comboList["combos"]){
+                    $scope.formattedCombos[combo] = $scope.splitCombo.join(" ");
+                }
+                console.log("Formatted combos!");
+                console.log($scope.formattedCombos)
             })
     }
 
